@@ -101,10 +101,9 @@
         [UIView animateWithDuration:0.25 animations:^{
             self.paymentDetailView.transform = CGAffineTransformTranslate(self.paymentDetailView.transform, -kScreenWidth, 0);
             self.paymentPasswordView.transform = CGAffineTransformTranslate(self.paymentPasswordView.transform, -kScreenWidth, 0);
-            
+        } completion:^(BOOL finished) {
             [self.paymentPasswordView.passwordField becomeFirstResponder];
         }];
-        
     }
 }
 
