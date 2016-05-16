@@ -207,7 +207,7 @@
                 <outlet property="moneyLabel" destination="Sux-KG-elb" id="sr9-Ca-6Id"/>
                 <outlet property="unityPayButton" destination="4Xs-2M-s23" id="GeN-cN-1lk"/>
             </connections>
-            <point key="canvasLocation" x="413.5" y="-44.5"/>
+            <point key="canvasLocation" x="273.5" y="77.5"/>
         </view>
     </objects>
     <resources>

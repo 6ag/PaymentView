@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22CE0551CE9BE7F0056A1F3 /* image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B22CE0461CE9BE7F0056A1F3 /* image.bundle */; };
+		B22CE0561CE9BE7F0056A1F3 /* WSPaymentCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CE0481CE9BE7F0056A1F3 /* WSPaymentCircleView.m */; };
+		B22CE0571CE9BE7F0056A1F3 /* WSPaymentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CE04A1CE9BE7F0056A1F3 /* WSPaymentDetailView.m */; };
+		B22CE0581CE9BE7F0056A1F3 /* WSPaymentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22CE04B1CE9BE7F0056A1F3 /* WSPaymentDetailView.xib */; };
+		B22CE0591CE9BE7F0056A1F3 /* WSPaymentPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CE04E1CE9BE7F0056A1F3 /* WSPaymentPasswordView.m */; };
+		B22CE05A1CE9BE7F0056A1F3 /* WSPaymentPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22CE04F1CE9BE7F0056A1F3 /* WSPaymentPasswordView.xib */; };
+		B22CE05B1CE9BE7F0056A1F3 /* WSPaymentResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CE0511CE9BE7F0056A1F3 /* WSPaymentResultView.m */; };
+		B22CE05C1CE9BE7F0056A1F3 /* WSPaymentResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22CE0521CE9BE7F0056A1F3 /* WSPaymentResultView.xib */; };
+		B22CE05D1CE9BE7F0056A1F3 /* WSPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CE0541CE9BE7F0056A1F3 /* WSPaymentView.m */; };
 		B2FE95CD1CC885FB00DB936C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FE95CC1CC885FB00DB936C /* main.m */; };
 		B2FE95D01CC885FB00DB936C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FE95CF1CC885FB00DB936C /* AppDelegate.m */; };
 		B2FE95D31CC885FB00DB936C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FE95D21CC885FB00DB936C /* ViewController.m */; };
 		B2FE95D61CC885FB00DB936C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FE95D41CC885FB00DB936C /* Main.storyboard */; };
 		B2FE95D81CC885FB00DB936C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FE95D71CC885FB00DB936C /* Assets.xcassets */; };
 		B2FE95DB1CC885FB00DB936C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FE95D91CC885FB00DB936C /* LaunchScreen.storyboard */; };
-		B2FE960F1CC89B0000DB936C /* image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2FE96051CC89B0000DB936C /* image.bundle */; };
-		B2FE96101CC89B0000DB936C /* WSPaymentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FE96071CC89B0000DB936C /* WSPaymentDetailView.m */; };
-		B2FE96111CC89B0000DB936C /* WSPaymentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FE96081CC89B0000DB936C /* WSPaymentDetailView.xib */; };
-		B2FE96121CC89B0000DB936C /* WSPaymentPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FE960B1CC89B0000DB936C /* WSPaymentPasswordView.m */; };
-		B2FE96131CC89B0000DB936C /* WSPaymentPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FE960C1CC89B0000DB936C /* WSPaymentPasswordView.xib */; };
-		B2FE96141CC89B0000DB936C /* WSPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FE960E1CC89B0000DB936C /* WSPaymentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B22CE0461CE9BE7F0056A1F3 /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
+		B22CE0471CE9BE7F0056A1F3 /* WSPaymentCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentCircleView.h; sourceTree = "<group>"; };
+		B22CE0481CE9BE7F0056A1F3 /* WSPaymentCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentCircleView.m; sourceTree = "<group>"; };
+		B22CE0491CE9BE7F0056A1F3 /* WSPaymentDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentDetailView.h; sourceTree = "<group>"; };
+		B22CE04A1CE9BE7F0056A1F3 /* WSPaymentDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentDetailView.m; sourceTree = "<group>"; };
+		B22CE04B1CE9BE7F0056A1F3 /* WSPaymentDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSPaymentDetailView.xib; sourceTree = "<group>"; };
+		B22CE04C1CE9BE7F0056A1F3 /* WSPaymentOther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentOther.h; sourceTree = "<group>"; };
+		B22CE04D1CE9BE7F0056A1F3 /* WSPaymentPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentPasswordView.h; sourceTree = "<group>"; };
+		B22CE04E1CE9BE7F0056A1F3 /* WSPaymentPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentPasswordView.m; sourceTree = "<group>"; };
+		B22CE04F1CE9BE7F0056A1F3 /* WSPaymentPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSPaymentPasswordView.xib; sourceTree = "<group>"; };
+		B22CE0501CE9BE7F0056A1F3 /* WSPaymentResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentResultView.h; sourceTree = "<group>"; };
+		B22CE0511CE9BE7F0056A1F3 /* WSPaymentResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentResultView.m; sourceTree = "<group>"; };
+		B22CE0521CE9BE7F0056A1F3 /* WSPaymentResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSPaymentResultView.xib; sourceTree = "<group>"; };
+		B22CE0531CE9BE7F0056A1F3 /* WSPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentView.h; sourceTree = "<group>"; };
+		B22CE0541CE9BE7F0056A1F3 /* WSPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentView.m; sourceTree = "<group>"; };
 		B2FE95C81CC885FB00DB936C /* paymentViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paymentViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FE95CC1CC885FB00DB936C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2FE95CE1CC885FB00DB936C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,16 +50,6 @@
 		B2FE95D71CC885FB00DB936C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2FE95DA1CC885FB00DB936C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2FE95DC1CC885FB00DB936C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2FE96051CC89B0000DB936C /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
-		B2FE96061CC89B0000DB936C /* WSPaymentDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentDetailView.h; sourceTree = "<group>"; };
-		B2FE96071CC89B0000DB936C /* WSPaymentDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentDetailView.m; sourceTree = "<group>"; };
-		B2FE96081CC89B0000DB936C /* WSPaymentDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSPaymentDetailView.xib; sourceTree = "<group>"; };
-		B2FE96091CC89B0000DB936C /* WSPaymentOther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentOther.h; sourceTree = "<group>"; };
-		B2FE960A1CC89B0000DB936C /* WSPaymentPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentPasswordView.h; sourceTree = "<group>"; };
-		B2FE960B1CC89B0000DB936C /* WSPaymentPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentPasswordView.m; sourceTree = "<group>"; };
-		B2FE960C1CC89B0000DB936C /* WSPaymentPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSPaymentPasswordView.xib; sourceTree = "<group>"; };
-		B2FE960D1CC89B0000DB936C /* WSPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPaymentView.h; sourceTree = "<group>"; };
-		B2FE960E1CC89B0000DB936C /* WSPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPaymentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22CE0451CE9BE7F0056A1F3 /* PaymentView */ = {
+			isa = PBXGroup;
+			children = (
+				B22CE0461CE9BE7F0056A1F3 /* image.bundle */,
+				B22CE0471CE9BE7F0056A1F3 /* WSPaymentCircleView.h */,
+				B22CE0481CE9BE7F0056A1F3 /* WSPaymentCircleView.m */,
+				B22CE0491CE9BE7F0056A1F3 /* WSPaymentDetailView.h */,
+				B22CE04A1CE9BE7F0056A1F3 /* WSPaymentDetailView.m */,
+				B22CE04B1CE9BE7F0056A1F3 /* WSPaymentDetailView.xib */,
+				B22CE04C1CE9BE7F0056A1F3 /* WSPaymentOther.h */,
+				B22CE04D1CE9BE7F0056A1F3 /* WSPaymentPasswordView.h */,
+				B22CE04E1CE9BE7F0056A1F3 /* WSPaymentPasswordView.m */,
+				B22CE04F1CE9BE7F0056A1F3 /* WSPaymentPasswordView.xib */,
+				B22CE0501CE9BE7F0056A1F3 /* WSPaymentResultView.h */,
+				B22CE0511CE9BE7F0056A1F3 /* WSPaymentResultView.m */,
+				B22CE0521CE9BE7F0056A1F3 /* WSPaymentResultView.xib */,
+				B22CE0531CE9BE7F0056A1F3 /* WSPaymentView.h */,
+				B22CE0541CE9BE7F0056A1F3 /* WSPaymentView.m */,
+			);
+			path = PaymentView;
+			sourceTree = "<group>";
+		};
 		B2FE95BF1CC885FB00DB936C = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +104,7 @@
 		B2FE95CA1CC885FB00DB936C /* paymentViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B2FE96041CC89B0000DB936C /* PaymentView */,
+				B22CE0451CE9BE7F0056A1F3 /* PaymentView */,
 				B2FE95CE1CC885FB00DB936C /* AppDelegate.h */,
 				B2FE95CF1CC885FB00DB936C /* AppDelegate.m */,
 				B2FE95D11CC885FB00DB936C /* ViewController.h */,
@@ -94,23 +124,6 @@
 				B2FE95CC1CC885FB00DB936C /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B2FE96041CC89B0000DB936C /* PaymentView */ = {
-			isa = PBXGroup;
-			children = (
-				B2FE96051CC89B0000DB936C /* image.bundle */,
-				B2FE96061CC89B0000DB936C /* WSPaymentDetailView.h */,
-				B2FE96071CC89B0000DB936C /* WSPaymentDetailView.m */,
-				B2FE96081CC89B0000DB936C /* WSPaymentDetailView.xib */,
-				B2FE96091CC89B0000DB936C /* WSPaymentOther.h */,
-				B2FE960A1CC89B0000DB936C /* WSPaymentPasswordView.h */,
-				B2FE960B1CC89B0000DB936C /* WSPaymentPasswordView.m */,
-				B2FE960C1CC89B0000DB936C /* WSPaymentPasswordView.xib */,
-				B2FE960D1CC89B0000DB936C /* WSPaymentView.h */,
-				B2FE960E1CC89B0000DB936C /* WSPaymentView.m */,
-			);
-			path = PaymentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,12 +183,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FE96131CC89B0000DB936C /* WSPaymentPasswordView.xib in Resources */,
+				B22CE05A1CE9BE7F0056A1F3 /* WSPaymentPasswordView.xib in Resources */,
 				B2FE95DB1CC885FB00DB936C /* LaunchScreen.storyboard in Resources */,
-				B2FE96111CC89B0000DB936C /* WSPaymentDetailView.xib in Resources */,
+				B22CE0581CE9BE7F0056A1F3 /* WSPaymentDetailView.xib in Resources */,
 				B2FE95D81CC885FB00DB936C /* Assets.xcassets in Resources */,
+				B22CE05C1CE9BE7F0056A1F3 /* WSPaymentResultView.xib in Resources */,
 				B2FE95D61CC885FB00DB936C /* Main.storyboard in Resources */,
-				B2FE960F1CC89B0000DB936C /* image.bundle in Resources */,
+				B22CE0551CE9BE7F0056A1F3 /* image.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,11 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2FE96121CC89B0000DB936C /* WSPaymentPasswordView.m in Sources */,
+				B22CE0591CE9BE7F0056A1F3 /* WSPaymentPasswordView.m in Sources */,
 				B2FE95D31CC885FB00DB936C /* ViewController.m in Sources */,
+				B22CE05B1CE9BE7F0056A1F3 /* WSPaymentResultView.m in Sources */,
+				B22CE0561CE9BE7F0056A1F3 /* WSPaymentCircleView.m in Sources */,
+				B22CE0571CE9BE7F0056A1F3 /* WSPaymentDetailView.m in Sources */,
+				B22CE05D1CE9BE7F0056A1F3 /* WSPaymentView.m in Sources */,
 				B2FE95D01CC885FB00DB936C /* AppDelegate.m in Sources */,
-				B2FE96141CC89B0000DB936C /* WSPaymentView.m in Sources */,
-				B2FE96101CC89B0000DB936C /* WSPaymentDetailView.m in Sources */,
 				B2FE95CD1CC885FB00DB936C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +358,7 @@
 				B2FE95E11CC885FB00DB936C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

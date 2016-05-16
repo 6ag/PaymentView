@@ -33,8 +33,8 @@
  */
 - (IBAction)didTappedCloseButton:(UIButton *)button
 {
-    if ([self.delegate respondsToSelector:@selector(didTappedcloseButton:)]) {
-        [self.delegate didTappedcloseButton:button];
+    if ([self.delegate respondsToSelector:@selector(didTappedDetailViewCloseButton)]) {
+        [self.delegate didTappedDetailViewCloseButton];
     }
 }
 
@@ -73,8 +73,8 @@
  */
 - (IBAction)didTappedConfirmButton:(UIButton *)button
 {
-    if ([self.delegate respondsToSelector:@selector(didTappedConfirmButton:paymentMethod:)]) {
-        [self.delegate didTappedConfirmButton:button paymentMethod:self.balanceButton.selected];
+    if ([self.delegate respondsToSelector:@selector(didTappedDetailViewConfirmButtonWithPaymentMethod:)]) {
+        [self.delegate didTappedDetailViewConfirmButtonWithPaymentMethod:self.balanceButton.selected];
     }
 }
 

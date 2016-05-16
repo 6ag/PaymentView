@@ -34,23 +34,42 @@
 }
 
 #pragma mark - WSPaymentViewDelegate
-- (void)didTappedConfirmButton:(UIButton *)paymentButton paymentMethod:(WSPaymentMethod)method paymentPassword:(NSString *)paymentPassword
+- (void)didTappedConfirmButtonWithPaymentMethod:(WSPaymentMethod)method paymentPassword:(NSString *)paymentPassword
 {
     if (method == WSPaymentMethodOnline) {
         NSLog(@"在线支付");
     } else {
-        NSLog(@"余额支付");
+        NSLog(@"余额支付 密码: %@", paymentPassword);
+        
+        // 模拟
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.paymentView paymentResult:YES message:@"付款成功"];
+        });
+        
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self.paymentView paymentResult:NO message:@"当前支付密码不正确"];
+//        });
+        
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self.paymentView paymentResult:NO message:@"系统异常"];
+//        });
+        
     }
 }
 
-- (void)didTappedColseButton:(UIButton *)colseButton
+- (void)didTappedColseButton
 {
     NSLog(@"支付视图关闭");
 }
 
-- (void)didTappedForgetPasswordButton:(UIButton *)forgetPasswordButton
+- (void)didTappedForgetPasswordButton
 {
     NSLog(@"忘记密码");
+}
+
+- (void)paymentComplete
+{
+    NSLog(@"付款完成");
 }
 
 @end

@@ -11,9 +11,9 @@
 
 @protocol WSPaymentPasswordViewDelegate <NSObject>
 
-- (void)didTappedConfirmButton:(UIButton *)paymentButton paymentPassword:(NSString *)paymentPassword;
-- (void)didTappedbackButton:(UIButton *)backButton;
-- (void)didTappedForgetPasswordButton:(UIButton *)forgetPasswordButton;
+- (void)didTappedPasswordViewConfirmButtonWithPaymentPassword:(NSString *)paymentPassword;
+- (void)didTappedPasswordViewBackButton;
+- (void)didTappedPasswordViewForgetPasswordButton;
 
 @end
 

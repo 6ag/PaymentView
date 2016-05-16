@@ -26,4 +26,7 @@ typedef enum : NSUInteger {
 // 屏幕宽度
 #define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
 
+// 进度条的颜色
+#define kCircleColor ([UIColor colorWithRed:70/255.0 green:156/255.0 blue:220/255.0 alpha:1.0])
+
 #endif /* WSPaymentOther_h */

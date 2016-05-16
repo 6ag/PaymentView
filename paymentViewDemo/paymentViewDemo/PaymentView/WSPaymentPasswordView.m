@@ -10,6 +10,8 @@
 
 @interface WSPaymentPasswordView ()
 @property (weak, nonatomic) IBOutlet UIView *passwordFieldView;  // 密码背景view
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
+
 
 @end
 
@@ -27,6 +29,17 @@
     self.passwordFieldView.layer.borderColor = [UIColor colorWithWhite:0.800 alpha:0.5].CGColor;
     self.passwordFieldView.layer.cornerRadius = 5;
     self.passwordFieldView.layer.masksToBounds = YES;
+    
+    [self.passwordField addTarget:self action:@selector(didChangePassword:) forControlEvents:UIControlEventEditingChanged];
+}
+
+- (void)didChangePassword:(UITextField *)passwordField
+{
+    if (passwordField.text.length >= 5) {
+        self.confirmButton.enabled = YES;
+    } else {
+        self.confirmButton.enabled = NO;
+    }
 }
 
 /**
@@ -36,11 +49,10 @@
 {
     [self.passwordField resignFirstResponder];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if ([self.delegate respondsToSelector:@selector(didTappedbackButton:)]) {
-            [self.delegate didTappedbackButton:button];
+        if ([self.delegate respondsToSelector:@selector(didTappedPasswordViewBackButton)]) {
+            [self.delegate didTappedPasswordViewBackButton];
         }
     });
-    
 }
 
 /**
@@ -50,8 +62,8 @@
 {
     [self.passwordField resignFirstResponder];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if ([self.delegate respondsToSelector:@selector(didTappedConfirmButton:paymentPassword:)]) {
-            [self.delegate didTappedConfirmButton:button paymentPassword:self.passwordField.text];
+        if ([self.delegate respondsToSelector:@selector(didTappedPasswordViewConfirmButtonWithPaymentPassword:)]) {
+            [self.delegate didTappedPasswordViewConfirmButtonWithPaymentPassword:self.passwordField.text];
         }
     });
 }
@@ -61,8 +73,8 @@
  */
 - (IBAction)didTappedForgetButton:(UIButton *)button
 {
-    if ([self.delegate respondsToSelector:@selector(didTappedForgetButton:)]) {
-        [self.delegate didTappedForgetPasswordButton:button];
+    if ([self.delegate respondsToSelector:@selector(didTappedPasswordViewForgetPasswordButton)]) {
+        [self.delegate didTappedPasswordViewForgetPasswordButton];
     }
 }
 

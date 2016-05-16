@@ -11,8 +11,8 @@
 
 @protocol  WSPaymentDetailViewDelegate<NSObject>
 
-- (void)didTappedConfirmButton:(UIButton *)confrimButton paymentMethod:(WSPaymentMethod)paymentMethod;
-- (void)didTappedcloseButton:(UIButton *)closeButton;
+- (void)didTappedDetailViewConfirmButtonWithPaymentMethod:(WSPaymentMethod)paymentMethod;
+- (void)didTappedDetailViewCloseButton;
 
 @end
 

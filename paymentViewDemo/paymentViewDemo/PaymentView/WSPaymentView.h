@@ -12,9 +12,10 @@
 
 @protocol WSPaymentViewDelegate <NSObject>
 
-- (void)didTappedConfirmButton:(UIButton *)paymentButton paymentMethod:(WSPaymentMethod)method paymentPassword:(NSString *)paymentPassword;
-- (void)didTappedColseButton:(UIButton *)colseButton;
-- (void)didTappedForgetPasswordButton:(UIButton *)forgetPasswordButton;
+- (void)didTappedConfirmButtonWithPaymentMethod:(WSPaymentMethod)method paymentPassword:(NSString *)paymentPassword;
+- (void)didTappedColseButton;
+- (void)didTappedForgetPasswordButton;
+- (void)paymentComplete;
 
 @end
 
@@ -30,6 +31,14 @@
  *  @param paymentMethod 付款方式
  */
 - (instancetype)initWithInfo:(NSString *)info money:(NSString *)money paymentMethod:(WSPaymentMethod)paymentMethod;
+
+/**
+ *  付款结果
+ *
+ *  @param result YES为成功
+ *  @param message 提示信息
+ */
+- (void)paymentResult:(BOOL)result message:(NSString *)message;
 
 /**
  *  显示付款视图
