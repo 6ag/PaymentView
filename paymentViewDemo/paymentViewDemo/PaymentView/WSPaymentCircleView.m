@@ -124,9 +124,9 @@
         case WSLoadStatusSuccess: {
             
             UIBezierPath *path = [UIBezierPath bezierPath];
-            [path moveToPoint:CGPointMake(10, 30)];
-            [path addLineToPoint:CGPointMake(35, 60)];
-            [path addLineToPoint:CGPointMake(60, 30)];
+            [path moveToPoint:CGPointMake(10, 35)];
+            [path addLineToPoint:CGPointMake(35, 55)];
+            [path addLineToPoint:CGPointMake(60, 35)];
             
             [self.path appendPath:path];
             [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(successOrFailedAnimation) interval:0.15];

@@ -103,6 +103,9 @@
  */
 - (void)paymentResult:(BOOL)result message:(NSString *)message
 {
+    self.paymentResultView.confirmButton.enabled = YES;
+    self.paymentResultView.confirmButton.backgroundColor = [UIColor colorWithRed:57/255.0 green:136/255.0 blue:211/255.0 alpha:1.0];
+    
     if (result) {
         // 显示成功UI
         self.paymentResultView.resultLabel.text = message;
@@ -154,6 +157,8 @@
             [self.delegate didTappedConfirmButtonWithPaymentMethod:paymentMethod paymentPassword:nil];
         }
     } else {
+        self.paymentResultView.confirmButton.enabled = NO;
+        self.paymentResultView.confirmButton.backgroundColor = [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1.0];
         // 余额支付跳转到密码视图
         [UIView animateWithDuration:0.25 animations:^{
             self.bgView.transform = CGAffineTransformTranslate(self.bgView.transform, -kScreenWidth, 0);

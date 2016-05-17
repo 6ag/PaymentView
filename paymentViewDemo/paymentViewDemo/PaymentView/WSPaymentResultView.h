@@ -22,5 +22,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet WSPaymentCircleView *loadView;
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 
 @end

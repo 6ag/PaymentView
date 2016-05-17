@@ -41,15 +41,15 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8V-qc-4me">
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8V-qc-4me">
                     <rect key="frame" x="20" y="247" width="401" height="44"/>
-                    <color key="backgroundColor" red="0.22352941176470587" green="0.53333333333333333" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="W8p-5x-6Mm"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="确定">
-                        <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -98,6 +98,7 @@
                 </mask>
             </variation>
             <connections>
+                <outlet property="confirmButton" destination="z8V-qc-4me" id="EcI-p0-YBi"/>
                 <outlet property="loadView" destination="uoq-pn-xCZ" id="0Of-x2-lEd"/>
                 <outlet property="resultLabel" destination="iVE-iG-huu" id="Dmm-5l-emb"/>
             </connections>
