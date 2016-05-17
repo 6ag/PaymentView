@@ -13,7 +13,7 @@
 
 @interface WSPaymentCircleView ()
 @property (nonatomic, strong) CAShapeLayer *shapeLayer;
-@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) CADisplayLink *displayLink;
 @property (nonatomic, assign) double add;
 @property (nonatomic, assign) CGFloat myRadius;
 @property (nonatomic, strong) UIBezierPath *path;
@@ -40,7 +40,6 @@
     self.shapeLayer.lineJoin = @"round";
     self.shapeLayer.strokeStart = 0;
     self.shapeLayer.strokeEnd = 0;
-    self.add = 0.1;
 }
 
 /**
@@ -49,8 +48,10 @@
 - (void)setupAnimationWithPath:(CGPathRef)path loadSelector:(SEL)loadSelector interval:(CGFloat)interval
 {
     self.shapeLayer.path = path;
+    self.add = interval;
     [self.layer addSublayer:self.shapeLayer];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:loadSelector userInfo:nil repeats:YES];
+    self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:loadSelector];
+    [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
 
 /**
@@ -81,7 +82,7 @@
     if (self.shapeLayer.strokeEnd <= 1) {
         self.shapeLayer.strokeEnd += self.add;
     } else {
-        [self removeTimer];
+        [self removeDisplayLink];
     }
 }
 
@@ -90,7 +91,7 @@
  */
 - (void)cleanLayer
 {
-    [self removeTimer];
+    [self removeDisplayLink];
     [self.shapeLayer removeFromSuperlayer];
     self.shapeLayer = nil;
 }
@@ -98,10 +99,11 @@
 /**
  *  移除定时器
  */
-- (void)removeTimer
+- (void)removeDisplayLink
 {
-    [self.timer invalidate];
-    self.timer = nil;
+    [self.displayLink removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    [self.displayLink invalidate];
+    self.displayLink = nil;
 }
 
 /**
@@ -118,7 +120,7 @@
         case WSLoadStatusLoading: {
             
             self.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(1.5, 1.5, self.myRadius * 2 - 3, self.myRadius * 2 - 3)];
-            [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(loadingAnimation) interval:0.1];
+            [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(loadingAnimation) interval:0.01];
         }
             break;
         case WSLoadStatusSuccess: {
@@ -129,7 +131,7 @@
             [path addLineToPoint:CGPointMake(60, 35)];
             
             [self.path appendPath:path];
-            [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(successOrFailedAnimation) interval:0.15];
+            [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(successOrFailedAnimation) interval:0.015];
         }
             break;
         case WSLoadStatusFailed: {
@@ -144,7 +146,7 @@
             
             [self.path appendPath:path];
             [self.path appendPath:path1];
-            [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(successOrFailedAnimation) interval:0.15];
+            [self setupAnimationWithPath:self.path.CGPath loadSelector:@selector(successOrFailedAnimation) interval:0.015];
         }
             break;
         default:
